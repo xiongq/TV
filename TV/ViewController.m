@@ -18,6 +18,7 @@
 @property(nonatomic, strong) UITableView    *TVList;
 @property(nonatomic, strong) AVPlayer       *play;
 @property(nonatomic, strong) AVPlayerItem   *playItem;
+@property(nonatomic, strong) AVPlayerLayer *playlayer;
 @property(nonatomic, strong) UIView         *toolsView;
 @property(nonatomic, strong) NSString       *ip;
 @property(nonatomic, strong) UIActivityIndicatorView     *activity;
@@ -110,6 +111,7 @@
     playlaer.frame = self.view.bounds;
     playlaer.backgroundColor = [UIColor blackColor].CGColor;
     [self.view.layer addSublayer:playlaer];
+    self.playlayer = playlaer;
     [self.play play];
     [self.playItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
     self.activity.center = self.view.center;
@@ -239,7 +241,18 @@
     [self.activity startAnimating];
     [self.playItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
 }
-
+//- (BOOL)shouldAutorotate
+//{
+//    return YES;
+//}
+//
+///**
+// *  设置特殊的界面支持的方向,这里特殊界面只支持Home在右侧的情况
+// */
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+//{
+//    return UIInterfaceOrientationMaskLandscape;
+//}
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     NSLog(@"展开");
     if (self.toolsView.hidden) {
@@ -249,6 +262,14 @@
         self.toolsView.hidden = YES;
     }
 
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.playlayer.frame = self.view.frame;
+    self.toolsView.frame = CGRectMake(0, 0, self.toolsView.frame.size.width, self.view.frame.size.height);
+    self.TVList.frame    = CGRectMake(60, 0, self.TVList.frame.size.width, self.view.frame.size.height);
+    self.activity.center = self.view.center;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

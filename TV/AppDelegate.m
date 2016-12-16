@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SGWiFiUploadManager.h"
 @interface AppDelegate ()
 
 @end
@@ -35,6 +35,11 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    SGWiFiUploadManager *mgr = [SGWiFiUploadManager sharedManager];
+    if (!mgr.isServerRunning) {
+        
+        [mgr startHTTPServerAtPort:10086];
+    }
 }
 
 
