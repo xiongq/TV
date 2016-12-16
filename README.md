@@ -6,3 +6,4 @@
   @"XXTV":@"HTTP://******** .M3U8"
 
 }
+![image](https://github.com/xiongq/TV/blob/master/IMG_2560.PNG)
