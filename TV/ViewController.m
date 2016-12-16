@@ -144,8 +144,20 @@
     [toolsView addSubview: self.TVList];
     self.toolsView = toolsView;
     [self setupServer];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationPlay) name:@"play" object:nil];
 }
 
+
+/**
+ 处理应用后台恢复之后点击不能播放的问题
+ */
+-(void)notificationPlay{
+    if (self.play) {
+        [self.play play];
+    }
+
+}
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     NSLog(@"addobser%@",change);
     
@@ -238,6 +250,7 @@
     NSString *url = [self.tvDic valueForKey:self.dataSource[indexPath.row]];
     self.playItem = [AVPlayerItem playerItemWithURL:[NSURL URLWithString:url]];
     [self.play replaceCurrentItemWithPlayerItem:self.playItem];
+//    [self.play play];
     [self.activity startAnimating];
     [self.playItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
 }
