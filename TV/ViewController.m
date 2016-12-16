@@ -124,7 +124,7 @@
     UIButton *WIFIcontent = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, 60, 40)];
     [WIFIcontent setTitle:@"传源" forState:UIControlStateNormal];
     WIFIcontent.transform = CGAffineTransformRotate(WIFIcontent.titleLabel.transform, M_PI_2);
-//    WIFIcontent.backgroundColor = [UIColor redColor];
+
     //wiif 传输过来的源
     UIButton *newRouce = [[UIButton alloc] initWithFrame:CGRectMake(0, 90, 60, 40)];
     [newRouce setTitle:@"WIFI源" forState:UIControlStateNormal];
