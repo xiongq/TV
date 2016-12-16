@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>安微卫视HD</key>
+	<string>http://120.87.4.20/wh7f454c46tw2592227493_1566686850/PLTV/88888894/224/3221225504/index.m3u8?icpid=88888888&amp;RTS=1481804451&amp;from=1&amp;hms_devid=183</string>
+	<key>深圳卫视HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225521/index.m3u8</string>
+	<key>CCTV-13新闻</key>
+	<string>http://officetv.bupt.edu.cn/hls/cctv13.m3u8</string>
+	<key>CCTV-12社会与法HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225497/index.m3u8</string>
+	<key>CCTV-10科教HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225495/index.m3u8</string>
+	<key>CCTV-9纪录HD</key>
+	<string>http://zb.iptv.gd.cn:30001/PLTV/88888905/224/3221227623/index.m3u8</string>
+	<key>CCTV-3综艺HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225484/index.m3u8</string>
+	<key>CCTV-1综合HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225489/index.m3u8</string>
+	<key>CCTV-6电影HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225491/index.m3u8</string>
+	<key>CHC高清电影</key>
+	<string>http://officetv.bupt.edu.cn/hls/chchd.m3u8</string>
+	<key>北京纪实HD</key>
+	<string>http://live.gslb.letv.com/gslb?stream_id=bjjsHD_1800&amp;tag=live&amp;ext=m3u8&amp;sign=live_tv&amp;platid=10&amp;splatid=1007&amp;format=letv&amp;expect=1</string>
+	<key>湖南卫视-高清</key>
+	<string>http://183.207.255.190/live/program/live/hnwshd/4000000/mnf.m3u8</string>
+	<key>浙江卫视-标清</key>
+	<string>http://111.39.226.103:8112/120000001001/wlds:8080/ysten-business/live/hdzhejiangstv/.m3u8</string>
+	<key>纪录片</key>
+	<string>http://218.244.147.118:6389/wtvlive/migu2/618338947_4</string>
+	<key>北京卫视</key>
+	<string>http://111.39.226.100:8114/120000001001/wlds:8080/ysten-business/live/hdbeijingstv/.m3u8?FvSeid=7b97256a22437f0e&amp;Fsv_filetype=1&amp;Fsv_ctype=LIVES&amp;Fsv_cid=973198&amp;Fsv_chan_hls_se_idx=7&amp;Fsv_TBt=1653832&amp;Fsv_ShiftEnable=0&amp;Fsv_ShiftTsp=0&amp;Fsv_SV_PARAM1=0&amp;Fsv_otype=0&amp;Provider_id=120000001001&amp;Pcontent_id=hdbeijingstv</string>
+	<key>北京卫视HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225531/index.m3u8</string>
+	<key>江苏卫视-高清</key>
+	<string>http://web-play.pptv.com/web-m3u8-300163.m3u8?type=mpptv&amp;playback=0&amp;kk=7c54577d18e31710dfc73e698f8c39a1-c592-5697b4e6&amp;fwc=0&amp;complete=1&amp;o=m.pptv.com&amp;rcc_id=m.pptv.com</string>
+	<key>江苏卫视HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225488/index.m3u8</string>
+	<key>东方卫视</key>
+	<string>http://183.207.255.190/live/program/live/hddfws/4000000/mnf.m3u8</string>
+	<key>东方卫视HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225508/index.m3u8</string>
+	<key>浙江卫视</key>
+	<string>http://183.207.255.190/live/program/live/zjwshd/4000000/mnf.m3u8</string>
+	<key>浙江卫视HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225487/index.m3u8</string>
+	<key>湖南卫视-高清-流畅</key>
+	<string>http://111.39.226.103:8112/120000001001/wlds:8080/ysten-business/live/hdhunanstv/.m3u8</string>
+	<key>湖南卫视HD</key>
+	<string>http://120.87.4.70/PLTV/88888894/224/3221225486/index.m3u8</string>
+	<key>凤凰卫视资讯</key>
+	<string>http://111.39.226.99:8114/120000001001/wlds:8080/ysten-business/live/fhzixun/.m3u8?FvSeid=2f5ca4f522437f0e&amp;Fsv_filetype=1&amp;Fsv_ctype=LIVES&amp;Fsv_cid=972849&amp;Fsv_chan_hls_se_idx=4&amp;Fsv_TBt=1777448&amp;Fsv_ShiftEnable=0&amp;Fsv_ShiftTsp=0&amp;Fsv_SV_PARAM1=0&amp;Fsv_otype=0&amp;Provider_id=120000001001&amp;Pcontent_id=fhzixun</string>
+	<key>凤凰卫视资讯HD</key>
+	<string>http://111.39.226.99:8114/120000001001/wlds:8080/ysten-business/live/fhzixun/.m3u8?FvSeid=2f5ca4f522437f0e&amp;Fsv_filetype=1&amp;Fsv_ctype=LIVES&amp;Fsv_cid=972849&amp;Fsv_chan_hls_se_idx=4&amp;Fsv_TBt=1777448&amp;Fsv_ShiftEnable=0&amp;Fsv_ShiftTsp=0&amp;Fsv_SV_PARAM1=0&amp;Fsv_otype=0&amp;Provider_id=120000001001&amp;Pcontent_id=fhzixun</string>
+	<key>凤凰卫视香港</key>
+	<string>http://111.39.226.103:8112/120000001001/wlds:8080/ysten-business/live/fhzixun/desc.m3u8</string>
+	<key>凤凰卫视中文</key>
+	<string>http://zv.3gv.ifeng.com/live/zhongwen800k.m3u8</string>
+	<key>凤凰卫视中文HD</key>
+	<string>http://111.39.226.103:8112/120000001001/wlds:8080/ysten-business/live/fhchinese/desc.m3u8</string>
+	<key>贵州卫视HD</key>
+	<string>http://cg2.gcable.cn:9090/live/guizhouHD_7000.m3u8</string>
+</dict>
+</plist>
