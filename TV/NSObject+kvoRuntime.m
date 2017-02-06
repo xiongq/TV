@@ -1,7 +1,7 @@
 //
 //  NSObject+kvoRuntime.m
 //  TV
-//
+//  runtime 交换移除通知方法 处理移除通知造成crash
 //  Created by xiong on 2016/12/15.
 //  Copyright © 2016年 xiong. All rights reserved.
 //
@@ -24,7 +24,7 @@
 }
 +(void)switchMethod{
 
-    SEL removeSel = @selector(removeObserver:forKeyPath:);
+    SEL removeSel   = @selector(removeObserver:forKeyPath:);
     SEL xqRemoveSel = @selector(removeXQ:forKeyPath:);
     
     Method systemRemoveMethod = class_getClassMethod([self class], removeSel);

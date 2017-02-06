@@ -1,7 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
     <head>
-        <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">
+    	
+        <meta http-equiv=\"content-type\" content=\"text/html"; charset= "UTF-8" >
     </head>
     <style>
     body {
@@ -20,7 +21,7 @@
     }
     
     .upload {
-        margin-top: 2px;
+        margin-top: 15px;
     }
     
     #submit input {
@@ -52,16 +53,22 @@
     #tips{
         color: #ea4c88;
         font-size: 17px;
+        
     }
-    
+    #tips2{
+        text-align: center;
+         font-size: 17px;  
+            
+        }
     .uploadField {
-        margin-top: 2px;
+        margin-top: 10px;
         width: 200px;
         height: 22px;
         font-size: 12px;
     }
     
     .uploadButton {
+       
         background-color: #ea4c88;
         color: #eee;
         font-weight: bold;
@@ -79,19 +86,25 @@
     .uploadButton:active {
         background-color: #a23351;
     }
-    
+    #email{
+        margin-top: 60px;
+        font-size: 15px;        
+    }
     </style>
     <body>
         <div id="container">
             <div id="form">
-                <h1>上传电视源</h1>
-                <p id="tips"  >只支持M3U8;不支持P2P;源后缀为plist</p>
-                <p>例子如下</p>
-                <P>   
-                {
+                <h1>WIFI电视源</h1>
+                <p id="tips"  >只支持M3U8<br>不支持P2P<br>源后缀为plist</p>
+<!--                <p>例子如下</p>-->
+                <P id= "tips2">  
+                    例子<br>
+        
+                {   
                     @"cctv" :   @"http://xx.xx.com/tv/cctv.m3u8",   <br>
+                    <br>
                     @"cctv2":   @"http://xx.xx.com/tv/cctv2.m3u8"   
-
+                    
                 }
 
                  </P>
@@ -99,7 +112,7 @@
                     <div class="upload">
                         <input type="file" name="upload1" id="upload1" style="display:none" onChange="document.form.path1.value=this.value">
                             <input class="uploadField" name="path1" readonly>
-                                <input class="uploadButton" type="button" value="选择" onclick="document.form.upload1.click()">
+                            <input class="uploadButton" type="button" value="选择" onclick="document.form.upload1.click()">
                     </div>
                 <!--     <div class="upload">
                         <input type="file" name="upload2" id="upload2" style="display:none" onChange="document.form.path2.value=this.value">
@@ -115,5 +128,6 @@
                 </form>
             </div>
         </div>
+        <p id = "email"> 如有疑问请联系 E-mail：flyxiongq@gmail.com</p>
     </body>
 </html>
